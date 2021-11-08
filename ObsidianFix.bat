@@ -1,29 +1,15 @@
 @echo off
-:: 检测 git 是否安装
-set sedcmd="C:\Program Files\Git\usr\bin\sed.exe"
-IF NOT EXIST %sedcmd% (
-	echo 没有找到【 %sedcmd% 】
-	echo "请从 https://git-scm.com/downloads 下载"
-	pause
-	exit
-)
-
 
 set home=%localappdata%\Obsidian\resources
-c:
-cd %home% 
-copy obsidian.asar obsidian.asar.backup
-echo "完成 obsidian 备份！"
+copy %home%\obsidian.asar %home%\obsidian.asar.backup
+echo 完成 obsidian 备份！
 
 
 :: %sedcmd% -b -i 's/https:\/\/raw\.githubusercontent\.com/          https:\/\/raw\.fastgit\.org/g' obsidian.asar
+%~dp0sed-4.8-x86.exe -b -i "s/https:\/\/raw\.githubusercontent\.com/https:\/\/raw\.fastgit\.org/g" %home%\obsidian.asar
+%~dp0sed-4.8-x86.exe -b -i "s/https:\/\/github\.com\/\"/https:\/\/hub\.fastgit\.org\/\"/g" %home%\obsidian.asar
 
-%sedcmd% -b -i 's/https:\/\/raw\.githubusercontent\.com/https:\/\/raw\.fastgit\.org/g' obsidian.asar
-%sedcmd% -b -i 's/https:\/\/github\.com\/"/https:\/\/hub\.fastgit\.org\/"/g' obsidian.asar
-
-echo "完成插件下载的修复！"
-
-
+echo 完成插件下载的修复！
 
 
 

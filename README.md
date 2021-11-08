@@ -28,12 +28,6 @@
 
 ### 上手指南
 
-#### 依赖
-由于使用到了 sed 命令，这里偷了个懒直接使用了 git 里面自带的 sed 命令。如果你电脑上有 sed 命令，直接指定 ObsidianFix.bat 中命令位置就可以了。
-
-1. 下载并安装 [git](https://git-scm.com/downloads)
-
-#### 使用
 1. 下载 [ObsidianFix.zip](https://gitee.com/juqkai/obsidian-community-plugins-fix/attach_files/874119/download/ObsidianFix.zip)
 2. 解压 ObsidianFix.zip
 3. 执行 ObsidianFix.bat
@@ -48,6 +42,7 @@ filetree
 ├── README.md
 ├── ObsidianFix.bat
 ├── ObsidianFix恢复.bat
+├── sed-4.8-x86.exe
 
 ```
 
@@ -63,5 +58,5 @@ juqkai@163.com
 
 
 - [Obsidian](https://Obsidian.md)
-
+- [sed](https://github.com/mbuilov/sed-windows)
 
