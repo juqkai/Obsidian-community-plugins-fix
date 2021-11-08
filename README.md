@@ -34,7 +34,7 @@
 1. 下载并安装 [git](https://git-scm.com/downloads)
 
 #### 使用
-1. 下载 [ObsidianFix.zip](https://gitee.com/juqkai/obsidian-community-plugins-fix/attach_files/873941/download/ObsidianFix.zip)
+1. 下载 [ObsidianFix.zip](https://gitee.com/juqkai/obsidian-community-plugins-fix/attach_files/874119/download/ObsidianFix.zip)
 2. 解压 ObsidianFix.zip
 3. 执行 ObsidianFix.bat
 4. 运行桌面上新创建的 Obsidian 快捷方式
