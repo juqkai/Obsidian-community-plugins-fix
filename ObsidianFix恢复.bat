@@ -1,4 +1,4 @@
-:: @echo off
+@echo off
 set home=%localappdata%\Obsidian\resources
 c:
 cd %home% 
@@ -13,6 +13,6 @@ IF NOT EXIST obsidian.asar.backup (
 del   .\obsidian.asar
 ren obsidian.asar.backup obsidian.asar
 
-echo "完成了 obsidian.asar 的恢复！"
+echo "完成了 obsidian 的恢复！"
 
 pause

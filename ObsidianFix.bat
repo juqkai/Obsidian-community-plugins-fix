@@ -28,7 +28,7 @@ echo "完成插件下载的修复！"
 
 
 :: 创建快捷方式
-echo 正在创建桌面快捷方式，请勿关闭本窗口.
+echo 正在创建桌面快捷方式。
 ::设置程序或文件的完整路径（必选）
 set Program=%localappdata%\Obsidian\Obsidian.exe
 
@@ -56,3 +56,5 @@ echo oShellLink.Save)>makelnk.vbs
 makelnk.vbs
 del /f /q makelnk.vbs
 echo 桌面快捷方式创建成功！ 
+echo Obsidian补丁执行结束！ 
+pause
