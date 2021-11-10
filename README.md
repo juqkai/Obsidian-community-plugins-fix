@@ -28,7 +28,7 @@
 
 ### 上手指南
 
-1. 下载 [ObsidianFix.zip](https://gitee.com/juqkai/obsidian-community-plugins-fix/attach_files/874845/download/obsidianFix.zip)
+1. 下载 [ObsidianFix.zip](https://gitee.com/juqkai/obsidian-community-plugins-fix/attach_files/876306/download/obsidianFix.zip)
 2. 解压 ObsidianFix.zip
 3. 执行 ObsidianFix.bat
 4. 运行桌面上新创建的 Obsidian 快捷方式

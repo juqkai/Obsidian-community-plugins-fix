@@ -11,6 +11,7 @@ IF NOT EXIST %home%\obsidian.asar (
 
 copy %home%\obsidian.asar %home%\obsidian.asar.backup
 echo 完成 obsidian 备份！
+echo 开始应用补丁！
 
 :: %sedcmd% -b -i 's/https:\/\/raw\.githubusercontent\.com/          https:\/\/raw\.fastgit\.org/g' obsidian.asar
 %~dp0sed-4.8-x86.exe -b -i "s/https:\/\/raw\.githubusercontent\.com/https:\/\/raw\.fastgit\.org/g" %home%\obsidian.asar
